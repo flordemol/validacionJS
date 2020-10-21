@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validaciones con JavaScript</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Actividad obligatoria - Unidad 3 JavaScript</h1>
+    </header>
+
+    <main>
+      <h2>Ingreso al Sistema</h2>
+
+      <form action="#" method="GET" id="formulario">
+        <div class="grupo-usuario">
+          <div class="grupo">
+            <label for="usuario">Usuario:</label>
+            <input
+              type="text"
+              id="usuario"
+              name="usuario"
+              placeholder="Tu usuario debe contener @"
+            />
+            <p class="alerta" id="alerta-usuario">
+              No puede estar vacío y debe contener al menos 1 "@"
+            </p>
+          </div>
+        </div>
+
+        <div class="grupo-clave">
+          <div class="grupo">
+            <label for="clave">Clave:</label>
+            <input
+              type="password"
+              id="clave"
+              name="clave"
+              placeholder="********"
+            />
+            <p class="alerta" id="alerta-clave">
+              La clave no puede estar vacía
+            </p>
+          </div>
+        </div>
+
+        <div class="grupo-btn">
+          <button type="submit">Ingresar</button>
+          <p class="mjeFormulario" id="mjeFormulario"></p>
+        </div>
+      </form>
+    </main>
+
+    <script src="control.js" defer></script>
+  </body>
+</html>
